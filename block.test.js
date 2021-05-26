@@ -31,7 +31,6 @@ describe('Block', () => {
 		const lastBlock = Block.genesis();
 		const data = 'mined data';
 		const mineBlock = Block.mineBlock({ lastBlock, data });
-		console.log(mineBlock, ' show me')
 		it('returns a Block instance', () => {
 			expect(mineBlock).toBeInstanceOf(Block);
 		})
